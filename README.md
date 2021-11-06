@@ -20,8 +20,10 @@ DB_PORT=3306
 DB_DATABASE=accidentmanager
 DB_USERNAME=admin
 DB_PASSWORD=password
+## 3 Instalamos las dependencias de Composer necesarias denro del proyecto. Dentro de la raíz del proyecto ejecutamos el siguiente comando en la consola.
+composer install
 
-## 3. Creamos la estructura de Usuario, Roles y Permisos
+## 3.1 Creamos la estructura de Usuario, Roles y Permisos
 php artisan db:seed --class=DatabaseSeeder
 ## 4. Creamos los permisos de cada una de las paginas 
 php artisan db:seed --class=PermissionTableSeeder
